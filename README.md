@@ -9,7 +9,9 @@ Usage
 If you have rhc installed, create your new application as follows:
 
 ```
-rhc app create appname -t diy-0.1 --from-code https://github.com/egor-k8n/openshift-play-framework
+rhc app create appname -t diy-0.1 \
+    --timeout 3600 \
+    --from-code https://github.com/egor-k8n/openshift-play-framework
 ```
 
 Otherwise, create a new diy application at
